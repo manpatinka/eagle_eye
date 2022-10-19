@@ -100,7 +100,7 @@ main .content {
 }
 
 .banner {
-    background-image: url("./Banner.png");
+    background-image: url("https://raw.githubusercontent.com/manpatinka/eagle_eye/main/Banner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
