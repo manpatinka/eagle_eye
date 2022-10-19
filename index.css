@@ -100,7 +100,7 @@ main .content {
 }
 
 .banner {
-    background-image: url("./images/Banner.png");
+    background-image: url("Banner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
