@@ -100,8 +100,7 @@ main .content {
 }
 
 .banner {
-    background-image: url(Banner.png);
-    background-position: center;
+    background-image: url(banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 20rem;
