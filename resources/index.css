@@ -16,7 +16,7 @@ body {
     color: rgb(40, 30, 85);
     width: 94%;
     margin-left: 3%;
-    background-color: rgba(253, 253, 253, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 header, main, footer, table, div, p, img, ul, nav, h1, h2, h3, h4, h5 {
