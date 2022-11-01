@@ -1,0 +1,336 @@
+html {
+    font-size: 16px;
+    background-color: rgba(15, 35, 97, 0.945);
+}
+
+@media only screen and (max-width: 760px) {
+    html { 
+        font-size: 12px;
+    }
+}
+
+body {
+    display: block;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    color: rgb(40, 30, 85);
+    width: 94%;
+    margin-left: 3%;
+    background-color: rgba(253, 253, 253, 0.9);
+}
+
+header, main, footer, table, div, p, img, ul, nav, h1, h2, h3, h4, h5 {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*border-bottom: 1px solid white;*/
+    background: linear-gradient(rgba(116, 172, 194, 0.5), rgba(30, 55, 139, 0.8) 70%);
+    z-index: 100;
+}
+
+header .content {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 0%;
+}
+
+.logo {
+    text-shadow: rgba(208, 179, 180, 0.85) 1px 0 10px;
+}
+
+.logo img {
+    flex: auto;
+    height: 2rem;
+    width: auto;
+    padding: 0.3125rem;
+}
+
+#name {
+    margin-top: 1rem;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 2.7rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow:rgba(188, 200, 210, 1) 1px 0 10px;
+}
+
+
+/*header .nav {
+    padding-right: 1%;
+}*/
+
+.nav li {  
+    display: inline;
+    margin: auto 2rem;
+    font-family:'Courier New', Courier, monospace;
+    /*font-weight: bold;*/
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 480px) {
+    #name {
+        display: none;
+    }
+
+    .nav li {
+        margin: auto 1.2rem;
+        font-family: 'Exo', sans-serif;
+    }
+}
+
+
+
+main .content {
+    margin-top: 3rem;
+}
+
+.banner {
+    background-image: url("./images/Banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    text-align: left;
+}
+
+.banner-words {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: 30%;
+    left: 5%;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(55, 41, 255), 0 0 1em rgba(30, 55, 139, 0.9), 0 0 0.2em rgba(15, 26, 65, 0.9);
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .banner-words {
+        top: 10%;
+        height: 100%;
+        width: 60%;
+    }
+}
+
+#about {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.img-container {
+    position: relative;
+    right: 5%;
+}
+
+.img-container img {
+    height: 30rem;
+    width: auto;
+}
+
+.info img {
+    width: 2rem;
+    height: auto;
+}
+
+.info, .money-return {
+    color: rgb(40, 30, 85);
+}
+
+#pros {
+    line-height: 4rem;
+    font-size: 1.6rem;
+    margin-bottom: 7%;
+    margin-top: 1%;
+    margin-left: 16%;
+    text-align: left;
+    list-style-position: outside;
+    list-style-type: square;
+}
+
+.info h2 {
+    font-size: 3rem;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    text-shadow: 1px 1px 2px black;
+    color: rgb(54, 147, 209); 
+}
+
+.money-return .pic {
+    padding-left: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-container {
+        position: relative;
+        right: 0;
+    }
+
+    .img-container img {
+        height: 20rem;
+    }
+
+    .money-return {
+        margin-left: 6%;
+    }
+
+    .money-return .pic {
+        padding-left: 0.5rem;
+    }
+
+    #pros {
+        line-height: 2.5rem;
+        margin-left: 7%;
+    }
+}
+
+#products {
+    margin-top: 5%;
+    padding-bottom: 1%;
+    border-top: 20px solid rgba(15, 35, 97, 0.945);
+    border-bottom: 40px solid rgba(15, 35, 97, 0.945);
+}
+
+#products h2 {
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    word-spacing: 0.3em;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgb(172, 212, 218);
+    border-bottom: 10px solid rgba(15, 35, 97, 0.945);
+    margin-bottom: 0;
+}
+
+#products .content {
+    margin: 0 auto;
+    padding-top: 3%;
+    display: flex;
+    background-color:  rgba(188, 200, 210, 0.3);
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item img {
+    width: 13rem;
+    height: auto;
+}
+
+.item .img-container:hover {
+    background: linear-gradient(0.8turn, rgba(149, 165, 218, 1), rgba(243, 232, 234, 1), rgba(149, 165, 218, 1));
+    border: 1px solid white;
+}
+
+
+.item .img-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    background: linear-gradient(0.8turn, rgba(149, 165, 218, 0.753), rgba(243, 232, 234, 0.753), rgba(149, 165, 218, 0.753));
+    border-radius: 50%;
+    padding-top: 3%;
+}
+
+.item p {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+footer {
+    background: linear-gradient(rgba(116, 172, 194, 0.3), rgba(30, 55, 139, 0.966) 70%) ;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    height: 6rem;
+    width: 100%;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ceocontacts {
+    display: flex;
+    padding: 0.75rem;
+    align-items: center;
+}
+
+.ceo {
+    margin-bottom: 10%;
+}
+
+.ceo img {
+    position: relative;
+    left: 25%;
+    height: 3rem;
+    width: auto;
+}
+
+.ceo p{
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+}
+
+#contacts {
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+#contacts p {
+    padding: 0;
+    margin: 0;
+}
+
+#copyright {
+    padding-right: 1%;
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 760px) {
+    footer {
+        height: 5rem;
+    }
+
+    .ceocontacts {
+        padding: 0;
+    }
+
+    .ceo {
+        display: none;
+    }
+
+    #contacts {
+        padding-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+}
